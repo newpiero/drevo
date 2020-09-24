@@ -20,7 +20,7 @@
         };
         i.set("fancybox", {
             openEffect: "none",
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             nextEffect: "none",
             prevEffect: "none",
             closeSpeed: 0,
@@ -36,7 +36,7 @@
         });
         Number.prototype.pad = function (o) {
             var p = String(this);
-            while (p.length < (o || 2)) {
+            while (p.length < (o || 1)) {
                 p = "0" + p
             }
             return p
@@ -134,8 +134,8 @@
         });
         l.slick({
             arrows: !0,
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: !0,
             dots: !1,
             prevArrow: ".welcome__nav_prev",
@@ -151,8 +151,8 @@
         });
         c.slick({
             arrows: !0,
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: !0,
             dots: !1,
             prevArrow: ".welcomeSecond__nav_prev",
@@ -168,7 +168,7 @@
         });
         h.slick({
             arrows: !0,
-            slidesToShow: 3,
+            slidesToShow: 1,
             infinite: !0,
             speed: 300,
             autoplay: !0,
@@ -281,5 +281,8 @@
         }
 
         a(window).trigger("resize").trigger("scroll")
+
+
+        
     })
 })(jQuery)
