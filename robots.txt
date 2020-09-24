@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /wp-admin/
+
+Host: https://xn--b1addfffb3bfr.xn--80adxhks/
+

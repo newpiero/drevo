@@ -1,0 +1,27 @@
+.form_calculate_price {position: relative;background: #e0e0e0;padding-top: 70px;padding-bottom: 70px}
+.b_form_calc {width: 100%;text-align: center;margin-top: 25px;margin-bottom: 25px}
+.form_calculate_price .part_1 label {line-height: 15px}
+.form_calculate_price .part_1 .form_field {margin: 15px 15px 10px 15px}
+.form_calculate_price .part_2 .form_field {margin: 15px 0 10px 0}
+.form_calculate_price .part_2 .form_field input {padding: 7px 10px 7px 10px}
+.form_calculate_price .close_form {position: absolute;top: 10px;right: 10px}
+.form_calculate_price a.close_form {color: #ccc;text-decoration: none; width: 20px; height: 20px; background: url(../img/icons/close.svg) no-repeat 50%;}
+#form-callback-calc {display: none}
+#okno {-webkit-box-shadow: 3px 3px 29px -10px rgba(0, 0, 0, 0.75);-moz-box-shadow: 3px 3px 29px -10px rgba(0, 0, 0, 0.75);box-shadow: 3px 3px 29px -10px rgba(0, 0, 0, 0.75);border: solid 1px #ccc;width: 300px;height: 400px;text-align: center;padding: 15px;color: #000;position: fixed;top: 50px;right: 0;bottom: 0;left: 0;margin: auto;background: #fff;z-index: 1000000000}
+#form-callback-calc:target {display: block}
+.close {display: inline-block;border: 1px solid #00c;color: #00c;padding: 0 12px;margin: 10px;text-decoration: none;background: #f2f2f2;font-size: 14pt;cursor: pointer}
+.close:hover {background: #e6e6ff}
+.form_calculate_price .part_1 input {display: flex;margin-right: 15px}
+.form_calculate_price .part_1 label {display: flex}
+.div_padding {padding-top: 70px;padding-bottom: 70px}
+.form_field {position: relative}
+.part_1 input[type="checkbox"] {opacity: 0;position: absolute;bottom: 0;left: -25px;z-index: 10000000}
+.part_1 label::before {content: "";display: inline-block;height: 16px;width: 16px;background: #fff;border: 0 solid}
+.part_1 label::after {content: "";display: inline-block;height: 6px;width: 9px;border-left: 2px solid;border-bottom: 2px solid;transform: rotate(-45deg)}
+.part_1 label {position: relative}
+.part_1 label::before, .part_1 label::after {position: absolute;margin-left: -25px;margin-top: -4px}
+.part_1 label::before {top: 3px}
+.part_1 label::after {left: 4px;top: 7px}
+.part_1 input[type="checkbox"] + label::after {content: none}
+.part_1 input[type="checkbox"]:checked + label::after {content: ""}
+.part_1 input[type="checkbox"]:focus + label::before {outline: #3b99fc auto 5px}
